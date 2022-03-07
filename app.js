@@ -36,7 +36,7 @@ app.get("/registerscore", (req, res) => {
   let oldscore = users[user]
   var oldscoreNum = parseInt(oldscore);
   var scoreNum = parseInt(score);
-  if ( oldscore == null || timeNum > oldscoreNum){
+  if ( oldscore == null || scoreNum > oldscoreNum){
     users[user] = score
   }
 
